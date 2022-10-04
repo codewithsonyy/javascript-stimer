@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>sony's timer</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header">
+        <div class="close-bar">
+          <div class="appinfo">
+            <img class="clock-img" src="clock-png.png" alt="clock png" />
+            <h6 class="title-app">sony's timer</h6>
+          </div>
+          <a class="btn">&times;</a>
+        </div>
+        <nav class="nav">
+          <a class="nav-link nav-link--1" data-btn="1" href="#">File</a>
+          <div class="link-bar--subcategory-wrapper wrapper--1">
+            <ul class="link-bar--subcategories">
+              <li class="link-bar--option file">Quit ctrl+q</li>
+            </ul>
+          </div>
+          <a class="nav-link nav-link--2" data-btn="2" href="#">Actions</a>
+          <div class="link-bar--subcategory-wrapper wrapper--2">
+            <ul class="link-bar--subcategories">
+              <li class="link-bar--option actions--1">Play/Pause space</li>
+              <li class="link-bar--option actions--2">Reset ctrl+r</li>
+            </ul>
+          </div>
+          <a class="nav-link nav-link--3" data-btn="3" href="#">Set</a>
+          <div class="link-bar--subcategory-wrapper wrapper--3">
+            <ul class="link-bar--subcategories">
+              <li class="link-bar--option link-bar--option-1 set">5</li>
+              <li class="link-bar--option link-bar--option-2 set">10</li>
+              <li class="link-bar--option link-bar--option-3 set">15</li>
+              <li class="link-bar--option link-bar--option-4 set">20</li>
+              <li class="link-bar--option link-bar--option-5 set">30</li>
+              <li class="link-bar--option link-bar--option-6 set">45</li>
+              <li class="link-bar--option link-bar--option-7 set">60</li>
+            </ul>
+          </div>
+          <a class="nav-link nav-link--4" data-btn="4" href="#">Help</a>
+          <div class="link-bar--subcategory-wrapper wrapper--4">
+            <ul class="link-bar--subcategories">
+              <li class="link-bar--option help--1">Privacy Policy</li>
+              <li class="link-bar--option help--2">stimer version 2.0</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="main">
+        <a class="main-btns">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="refresh"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+        </a>
+        <h1 class="timer">30:00</h1>
+        <a class="main-btns">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="play"
+            onclick="play()"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="pause hidden"
+            onclick="pause()"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <div class="hide"></div>
+  </body>
+</html>
